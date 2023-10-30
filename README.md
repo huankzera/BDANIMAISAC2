@@ -44,69 +44,80 @@ insert into Animais values (25, 'Rircardo', date'2021-12-22', 31.2, 'roxo');
 
 SELECT * from Animais;
 
-![FT1](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/Foto1.png);
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/d53e8f16-8d13-4d9f-bf2d-cf01996f6c02)
+
 
 
 -- Mostra os animais da tabela onde o PESO é maior que 13.1. --
 
 SELECT * FROM Animais WHERE PESO > 13.1;
 
-![FT2](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/Foto2.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/22eb0e42-a59d-4402-90a1-b9589f66d467)
+
 
 -- Mostra os animais com a data de nascimento entre o intervalo de 1 de fevereiro de 2015 a 31 de dezembro de 2015. --
 
 SELECT * FROM Animais Where NASC >= "2015-02-01" AND NASC <= "2015-12-31";
 SELECT * FROM Animais Where NASC BETWEEN "2015-02-01" AND "2015-12-31";
 
-![FT3](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto3.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/f9cfeb99-bda0-4a4f-9904-c8696dcc4366)
+
 
 --  Mostra os animais que tem a cor "branco" e o peso é maior que 15.0. --
 
 SELECT * FROM Animais WHERE COR = "branco" AND PESO > 15.0;
 
-![FT4](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto4.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/9a4d7c8a-d4e8-48ff-8d64-c3cbcf898b44)
+
 
 -- Mostra os animais cujos nomes começam com a letra "b". --
 
 SELECT NOME, COR, PESO FROM Animais Where NOME LIKE "b%";
 
-![FT5](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto5.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/fa6919a8-6534-4eea-8aa6-4afcd76a06ad)
+
 
 --  Mostra os nomes, cores e pesos dos animais com cores "vermelho", "amarelo", "marrom" ou "laranja". --
 
 SELECT NOME, COR, PESO FROM Animais  
 WHERE COR = "vermelho" OR COR = "amarelo" OR  COR = "marrom" OR COR = "laranja";
 
-![FT6](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/Foto6.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/aaa89452-44c2-4625-89ec-508ad334958f)
+
 
 -- Mostra os animais ordenados por data de nascimento em ordem decrescente. --
 
 SELECT NOME, COR, NASC, PESO FROM Animais ORDER BY NASC DESC;
 
-![FT7](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto7.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/f835c052-9b56-43ee-9a36-126f7fd7807f)
+
 
 -- Mostras os animais cujos nomes começam com "C" e cuja cor não é "branco". --
 SELECT * FROM Animais WHERE NOME LIKE "C%" AND COR != "branco";
 
-![FT8](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto8.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/3dc738f8-6333-4e24-a234-545ce8c92f3d)
+
 
 -- Mostra os animais onde o nome contém a sequência "ba" em qualquer posição. --
 SELECT * FROM Animais WHERE NOME LIKE "%ba%";
 
-![FT9](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto9.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/42cb8ecd-84b4-4179-9df4-affa37a447f1)
+
 
 -- Mostra os animais cujo peso está entre 13.0 e 15.0. --
 
 SELECT * FROM Animais WHERE PESO >= 13.0 AND PESO <= 15.0;
 
-![FT10](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto10.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/9a8acfc3-47a5-4c20-9a42-bcba9bb92200)
+
 
 -- Mostra os animais com peso maior ou igual a 30.0 e que são da cor "amarelo", ou da cor "roxo" e com data de nascimento após 31 de dezembro de 2012. --
 
 SELECT * FROM Animais 
 WHERE PESO >= 30.0 AND COR = "amarelo" OR COR = "roxo" AND NASC > "2012-12-31";
 
-![FT11](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto11.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/99969e24-2c8f-4889-9c9a-12bdde43e7f3)
+
 
 /*DESAFIO 1 - Capricornianos */
 
@@ -116,7 +127,8 @@ SELECT * FROM Animais
 WHERE MONTH(NASC) = 1 AND DAY(NASC) BETWEEN 1 AND 20 OR MONTH(NASC) = 12 
 AND DAY(NASC) BETWEEN 22 AND 31;
 
-![FT12](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto12.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/b9b9bbd1-028e-4860-bc16-0157df1a102c)
+
 
 /*DESAFIO 2 - Nomes compostos*/
 
@@ -124,7 +136,8 @@ AND DAY(NASC) BETWEEN 22 AND 31;
 
 SELECT * FROM Animais WHERE NOME LIKE "% %";
 
-![FT13](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/foto13.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/849b552b-7eee-4f06-8c14-125e173ecbf2)
+
 
 ## ETAPA 2
 
@@ -169,8 +182,10 @@ INSERT INTO Animais2 (Nome, Data_Nasc, Peso, Especie_ID) VALUES
 SELECT * FROM Animais2 An
 INNER JOIN Especies Esp ON Esp.ID = An.Especie_ID;
 
-![AN1](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/animais1.png)
-![AN2](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/DER%20ANIMAIS%20ESPECIES.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/5cb9d423-ed08-4328-adb4-a246f3d93dfc)
+
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/e128f542-e0cf-429c-822c-aad64e69a84e)
+
 
 -- EXERCÍCIO 2 --
 
@@ -214,8 +229,9 @@ INSERT INTO Produtos2 (Nome, PrecoCusto, PrecoVenda, DataValidade, Marca_ID) VAL
 SELECT * FROM Produtos2 P
 INNER JOIN Marcas M ON M.ID = P.Marca_ID;
 
-![PD1](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/produtos1.png)
-![PD2](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/DER%20MARCAS%20E%20PRODUTOS.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/a612202a-6faf-4c2c-a5d3-37363d94e49f)
+
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/6e441bd9-36f4-45f8-8c38-62c0dc930b93)
 
 -- EXERCÍCIO 3 --
 
@@ -257,5 +273,6 @@ INSERT INTO Filmes (Titulo, Sinopse, Estudio, Categoria_ID) VALUES
 SELECT * FROM Filmes F
 INNER JOIN Categorias C ON C.ID = F.Categoria_ID;
 
-![FL1](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/filmes1.png)
-![FL2](https://github.com/RodrigoMaMoraes/BDAnimais/blob/main/RelatoriosBD2/DER%20FILMES%20E%20CATEGORIAS.png)
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/04d6f959-ff3e-4f79-a57b-6115b3c6d872)
+
+![image](https://github.com/huankzera/BDANIMAISAC2/assets/126423433/16e2e2e6-e273-456d-b719-cd226c55a371)
